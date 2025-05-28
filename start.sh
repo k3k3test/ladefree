@@ -6,8 +6,8 @@ export NEZHA_KEY=${NEZHA_KEY:-''}             # v1的NZ_CLIENT_SECRET或v0的age
 export ARGO_DOMAIN='lade.ae1080.eu.org'        # 固定隧道域名,留空即启用临时隧道
 export ARGO_AUTH='{"AccountTag":"e388747d830d44e0aaf0e035dbaea9c8","TunnelSecret":"+cFuL4R8tA1D4/WKPGGcy5rbPeNGFg3gLYoZbxP8AYg=","TunnelID":"d87cb167-1566-43c8-b2aa-a6c3a6704ece","Endpoint":""}'           # 固定隧道token或json,留空即启用临时隧道
 export CFIP=${CFIP:-'www.visa.com.tw'}        # argo节点优选域名或优选ip
-export CFPORT=${CFPORT:-'443'}                # argo节点端口 
-export NAME=${NAME:-'Vls'}                    # 节点名称  
+export CFPORT='443'               # argo节点端口 
+export NAME='Vls'                   # 节点名称  
 export FILE_PATH=${FILE_PATH:-'./.npm'}       # sub 路径  
 export ARGO_PORT=${ARGO_PORT:-'8001'}         # argo端口 使用固定隧道token,cloudflare后台设置的端口需和这里对应
 export TUIC_PORT=${TUIC_PORT:-'40000'}        # Tuic 端口，支持多端口玩具可填写，否则不动
