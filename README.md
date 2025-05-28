@@ -50,14 +50,13 @@
     ```powershell
     Invoke-WebRequest -Uri "https://raw.githubusercontent.com/byJoey/ladefree/main/install.ps1" -OutFile "$env:TEMP\install.ps1"; PowerShell -ExecutionPolicy Bypass -File "$env:TEMP\install.ps1"; Remove-Item "$env:TEMP\install.ps1" -ErrorAction SilentlyContinue
     ```
+    
     打开 PowerShell 并运行以下命令：
     
-   ```powershell
-    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/k3k3test/ladefree/main/install.ps1" -OutFile "$env:TEMP\install.ps1"; PowerShell -ExecutionPolicy Bypass -File "$env:TEMP\install.ps1"; Remove-Item "$env:TEMP\install.ps1" -ErrorAction SilentlyContinue
+    ```powershell
+    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/byJoey/ladefree/main/install.ps1" -OutFile "$env:TEMP\install.ps1"; PowerShell -ExecutionPolicy Bypass -File "$env:TEMP\install.ps1"; Remove-Item "$env:TEMP\install.ps1" -ErrorAction SilentlyContinue
     ```
-
-    
-
+   
       * 此命令将脚本下载到临时文件夹。
       * 然后使用 `-ExecutionPolicy Bypass` 参数执行该脚本。
       * 最后，它会清理临时下载的脚本文件。
